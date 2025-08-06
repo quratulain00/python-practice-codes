@@ -1,0 +1,27 @@
+import random
+import datetime
+
+# Generate a random number between 1 and 100
+rand_num = random.randint(1, 100)
+print("Random number:", rand_num)
+
+# Show current date and time
+now = datetime.datetime.now()
+print("Current date and time:", now)
+
+# math_utils.py
+
+def add(a, b):
+    return a + b
+
+def square(n):
+    return n * n
+
+
+# main.py
+
+import math_utils  
+
+print("Addition:", math_utils.add(5, 3))     
+print("Square:", math_utils.square(4))       
+

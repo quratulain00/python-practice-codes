@@ -1,0 +1,29 @@
+def calc(a, b, op):
+    if op == '+':
+        return a + b  # Add
+    elif op == '-':
+        return a - b  # Subtract
+    elif op == '*':
+        return a * b  # Multiply
+    elif op == '/':
+        if b != 0:
+            return a / b  # Divide safely
+        else:
+            return "Can't divide by zero"
+    else:
+        return "Wrong operator"
+
+# Try it:
+print(calc(10, 5, '+'))  # It will print 15
+print(calc(8, 2, '*'))   # It will print 16
+
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1  # base case: factorial of 0 or 1 is 1
+    else:
+        return n * factorial(n - 1)  # keeps multiplying smaller numbers
+
+# Try it:
+print(factorial(5))  # It will print 120
